@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Recipes-->
         <scene sceneID="tne-QT-ifu">
@@ -21,14 +26,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0532" translatesAutoresizingMaskIntoConstraints="NO" id="8CW-i2-jvI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slo-M5-t95">
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slo-M5-t95">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.75630552030456855" green="0.75630552030456855" blue="0.75630552030456855" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="C9s-XN-MOs">
-                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="C9s-XN-MOs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="523"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DxF-K7-TaS">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DxF-K7-TaS">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -45,6 +50,67 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hP-jb-WNW">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="TQs-WT-Ems">
+                                        <rect key="frame" x="16" y="8" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="dmt-mv-g0g"/>
+                                            <constraint firstAttribute="width" constant="64" id="wst-Ja-F61"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-s3-Kzy">
+                                        <rect key="frame" x="88" y="8" width="199" height="64"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7d-ya-GAd" customClass="ClapButton" customModule="DeCuisine" customModuleProvider="target">
+                                        <rect key="frame" x="295" y="8" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="jpF-gQ-WRF"/>
+                                        </constraints>
+                                        <state key="normal" image="clap"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="clap"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnClapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGx-KX-mWt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1Lz-kB-BFh"/>
+                                    <constraint firstItem="K7d-ya-GAd" firstAttribute="leading" secondItem="tGO-s3-Kzy" secondAttribute="trailing" constant="8" id="508-jg-nAt"/>
+                                    <constraint firstItem="TQs-WT-Ems" firstAttribute="centerY" secondItem="5hP-jb-WNW" secondAttribute="centerY" id="7SS-NG-EQa"/>
+                                    <constraint firstItem="K7d-ya-GAd" firstAttribute="height" secondItem="TQs-WT-Ems" secondAttribute="height" id="DS1-wz-Voy"/>
+                                    <constraint firstItem="TQs-WT-Ems" firstAttribute="leading" secondItem="5hP-jb-WNW" secondAttribute="leading" constant="16" id="OSR-m6-AhV"/>
+                                    <constraint firstItem="tGO-s3-Kzy" firstAttribute="height" secondItem="TQs-WT-Ems" secondAttribute="height" id="Qqk-Ti-phO"/>
+                                    <constraint firstItem="tGO-s3-Kzy" firstAttribute="centerY" secondItem="5hP-jb-WNW" secondAttribute="centerY" id="Ucg-EU-JPr"/>
+                                    <constraint firstItem="K7d-ya-GAd" firstAttribute="centerY" secondItem="5hP-jb-WNW" secondAttribute="centerY" id="ZVa-q9-tXm"/>
+                                    <constraint firstItem="tGO-s3-Kzy" firstAttribute="leading" secondItem="TQs-WT-Ems" secondAttribute="trailing" constant="8" id="aDB-J2-uSf"/>
+                                    <constraint firstAttribute="trailing" secondItem="K7d-ya-GAd" secondAttribute="trailing" constant="16" id="fxo-YX-Vhh"/>
+                                </constraints>
+                            </view>
+                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DI4-bz-3Nv">
+                                <rect key="frame" x="168" y="534" width="39" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,9 +120,14 @@
                             <constraint firstItem="8CW-i2-jvI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4gI-oF-8Es"/>
                             <constraint firstItem="8CW-i2-jvI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="51k-Vl-fQg"/>
                             <constraint firstItem="slo-M5-t95" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="58H-3v-Diz"/>
-                            <constraint firstItem="C9s-XN-MOs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="Fil-KH-Tcn"/>
+                            <constraint firstItem="5hP-jb-WNW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5wP-Xt-Q3R"/>
+                            <constraint firstItem="5hP-jb-WNW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AEE-JL-t1x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5hP-jb-WNW" secondAttribute="bottom" id="Aa8-9b-6dM"/>
+                            <constraint firstItem="DI4-bz-3Nv" firstAttribute="centerX" secondItem="C9s-XN-MOs" secondAttribute="centerX" id="JDi-9G-Vla"/>
+                            <constraint firstItem="5hP-jb-WNW" firstAttribute="top" secondItem="C9s-XN-MOs" secondAttribute="bottom" id="S5t-6e-jJQ"/>
                             <constraint firstItem="slo-M5-t95" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TW8-u9-0ms"/>
                             <constraint firstItem="slo-M5-t95" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YP2-tT-IP2"/>
+                            <constraint firstItem="5hP-jb-WNW" firstAttribute="top" secondItem="DI4-bz-3Nv" secondAttribute="bottom" constant="16" id="aJQ-tE-kjN"/>
                             <constraint firstItem="8CW-i2-jvI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="d8p-GO-mUj"/>
                             <constraint firstItem="C9s-XN-MOs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dDf-pF-3tx"/>
                             <constraint firstItem="8CW-i2-jvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nrg-7h-tWZ"/>
@@ -65,8 +136,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Recipes" id="fij-eg-pn7"/>
                     <connections>
+                        <outlet property="btnClap" destination="K7d-ya-GAd" id="znH-Lo-X16"/>
                         <outlet property="colRecipes" destination="C9s-XN-MOs" id="GtR-4m-gje"/>
                         <outlet property="imgBack" destination="8CW-i2-jvI" id="3dM-20-SJY"/>
+                        <outlet property="imgUser" destination="TQs-WT-Ems" id="cUU-it-fb7"/>
+                        <outlet property="lblUsername" destination="tGO-s3-Kzy" id="uQu-Ht-vQ5"/>
+                        <outlet property="pageControl" destination="DI4-bz-3Nv" id="4jk-fv-FUK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,6 +157,7 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -97,5 +173,7 @@
     </scenes>
     <resources>
         <image name="IMG_0532" width="3024" height="4032"/>
+        <image name="clap" width="32" height="32"/>
+        <image name="users" width="128" height="128"/>
     </resources>
 </document>

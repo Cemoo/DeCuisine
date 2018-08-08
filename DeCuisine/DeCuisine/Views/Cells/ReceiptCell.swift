@@ -21,17 +21,18 @@ class ReceiptCell: UICollectionViewCell {
     }
     
     override func awakeFromNib() {
-        self.layer.cornerRadius = 10
-        self.imgReceipt.layer.cornerRadius = 10
+        self.layer.cornerRadius = 20
+        self.imgReceipt.layer.cornerRadius = 20
+        self.imgReceipt.clipsToBounds = true
     }
     
     func updateParalaxOffset(collectionviewbounds bounds: CGRect) {
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         let offsetFromCenter = CGPoint(x: center.x - self.center.x, y: center.y - self.center.y)
         let maxVerticalOffset = (bounds.width / 2) + (self.bounds.width / 2)
-        let scaleFactor = 40 / maxVerticalOffset
+        let scaleFactor = 80 / maxVerticalOffset
         paralaxOffset = offsetFromCenter.x * scaleFactor
-        
     }
+    
     
 }

@@ -22,6 +22,17 @@
 		52363F3A2119949500E2368D /* UIViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52363F342119949500E2368D /* UIViewDesignable.swift */; };
 		5245FD5A2119ACB6001BEAEC /* UINavigationControllerExtensioın.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FD592119ACB6001BEAEC /* UINavigationControllerExtensioın.swift */; };
 		5245FD5B2119ADD4001BEAEC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52363F1D2119783100E2368D /* Info.plist */; };
+		5245FD66211B0AEF001BEAEC /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD5E211B0AEE001BEAEC /* Ubuntu-Italic.ttf */; };
+		5245FD67211B0AEF001BEAEC /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD5F211B0AEE001BEAEC /* Ubuntu-Bold.ttf */; };
+		5245FD68211B0AEF001BEAEC /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD60211B0AEE001BEAEC /* Ubuntu-Light.ttf */; };
+		5245FD69211B0AEF001BEAEC /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD61211B0AEE001BEAEC /* Ubuntu-LightItalic.ttf */; };
+		5245FD6A211B0AEF001BEAEC /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD62211B0AEE001BEAEC /* Ubuntu-Regular.ttf */; };
+		5245FD6B211B0AEF001BEAEC /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD63211B0AEF001BEAEC /* Ubuntu-Medium.ttf */; };
+		5245FD6C211B0AEF001BEAEC /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD64211B0AEF001BEAEC /* Ubuntu-MediumItalic.ttf */; };
+		5245FD6D211B0AEF001BEAEC /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD65211B0AEF001BEAEC /* Ubuntu-BoldItalic.ttf */; };
+		5245FD6F211B210D001BEAEC /* ClapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FD6E211B210D001BEAEC /* ClapButton.swift */; };
+		5245FD71211B2353001BEAEC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FD70211B2353001BEAEC /* Global.swift */; };
+		5245FD74211B3B03001BEAEC /* ClapButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD73211B3B03001BEAEC /* ClapButtonView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +52,17 @@
 		52363F332119949500E2368D /* UITextViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewDesignable.swift; sourceTree = "<group>"; };
 		52363F342119949500E2368D /* UIViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewDesignable.swift; sourceTree = "<group>"; };
 		5245FD592119ACB6001BEAEC /* UINavigationControllerExtensioın.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationControllerExtensioın.swift"; sourceTree = "<group>"; };
+		5245FD5E211B0AEE001BEAEC /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		5245FD5F211B0AEE001BEAEC /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		5245FD60211B0AEE001BEAEC /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		5245FD61211B0AEE001BEAEC /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		5245FD62211B0AEE001BEAEC /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		5245FD63211B0AEF001BEAEC /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		5245FD64211B0AEF001BEAEC /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5245FD65211B0AEF001BEAEC /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5245FD6E211B210D001BEAEC /* ClapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClapButton.swift; sourceTree = "<group>"; };
+		5245FD70211B2353001BEAEC /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		5245FD73211B3B03001BEAEC /* ClapButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClapButtonView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +95,7 @@
 		52363F102119783000E2368D /* DeCuisine */ = {
 			isa = PBXGroup;
 			children = (
+				5245FD5C211B0AD7001BEAEC /* UI */,
 				52363F1D2119783100E2368D /* Info.plist */,
 				52363F25211986BE00E2368D /* ViewModels */,
 				52363F24211986B900E2368D /* Views */,
@@ -92,6 +115,7 @@
 		52363F24211986B900E2368D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5245FD72211B3AE1001BEAEC /* CustomViews */,
 				5245FD582119AC91001BEAEC /* Extensions */,
 				52363F2E2119942400E2368D /* Designables */,
 				52363F2921198C5400E2368D /* Cells */,
@@ -128,6 +152,7 @@
 		52363F282119870100E2368D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				5245FD70211B2353001BEAEC /* Global.swift */,
 				52363F112119783000E2368D /* AppDelegate.swift */,
 				52363F182119783100E2368D /* Assets.xcassets */,
 			);
@@ -162,6 +187,38 @@
 				5245FD592119ACB6001BEAEC /* UINavigationControllerExtensioın.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5245FD5C211B0AD7001BEAEC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5245FD5D211B0ADF001BEAEC /* Fonts */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5245FD5D211B0ADF001BEAEC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5245FD5F211B0AEE001BEAEC /* Ubuntu-Bold.ttf */,
+				5245FD65211B0AEF001BEAEC /* Ubuntu-BoldItalic.ttf */,
+				5245FD5E211B0AEE001BEAEC /* Ubuntu-Italic.ttf */,
+				5245FD60211B0AEE001BEAEC /* Ubuntu-Light.ttf */,
+				5245FD61211B0AEE001BEAEC /* Ubuntu-LightItalic.ttf */,
+				5245FD63211B0AEF001BEAEC /* Ubuntu-Medium.ttf */,
+				5245FD64211B0AEF001BEAEC /* Ubuntu-MediumItalic.ttf */,
+				5245FD62211B0AEE001BEAEC /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5245FD72211B3AE1001BEAEC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				5245FD6E211B210D001BEAEC /* ClapButton.swift */,
+				5245FD73211B3B03001BEAEC /* ClapButtonView.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,10 +280,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5245FD5B2119ADD4001BEAEC /* Info.plist in Resources */,
+				5245FD74211B3B03001BEAEC /* ClapButtonView.xib in Resources */,
+				5245FD66211B0AEF001BEAEC /* Ubuntu-Italic.ttf in Resources */,
+				5245FD6C211B0AEF001BEAEC /* Ubuntu-MediumItalic.ttf in Resources */,
 				52363F2B21198DDE00E2368D /* ReceiptCell.xib in Resources */,
 				52363F1C2119783100E2368D /* LaunchScreen.storyboard in Resources */,
+				5245FD69211B0AEF001BEAEC /* Ubuntu-LightItalic.ttf in Resources */,
+				5245FD68211B0AEF001BEAEC /* Ubuntu-Light.ttf in Resources */,
+				5245FD67211B0AEF001BEAEC /* Ubuntu-Bold.ttf in Resources */,
 				52363F192119783100E2368D /* Assets.xcassets in Resources */,
+				5245FD6D211B0AEF001BEAEC /* Ubuntu-BoldItalic.ttf in Resources */,
+				5245FD6A211B0AEF001BEAEC /* Ubuntu-Regular.ttf in Resources */,
 				52363F172119783000E2368D /* Main.storyboard in Resources */,
+				5245FD6B211B0AEF001BEAEC /* Ubuntu-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +309,9 @@
 				52363F142119783000E2368D /* RecipesVC.swift in Sources */,
 				52363F352119949500E2368D /* UINavigationControllerExt.swift in Sources */,
 				5245FD5A2119ACB6001BEAEC /* UINavigationControllerExtensioın.swift in Sources */,
+				5245FD6F211B210D001BEAEC /* ClapButton.swift in Sources */,
 				52363F3A2119949500E2368D /* UIViewDesignable.swift in Sources */,
+				5245FD71211B2353001BEAEC /* Global.swift in Sources */,
 				52363F122119783000E2368D /* AppDelegate.swift in Sources */,
 				52363F2D211990F700E2368D /* ReceiptCell.swift in Sources */,
 				52363F372119949500E2368D /* UIButtonDesignable.swift in Sources */,
