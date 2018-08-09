@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Recipes-->
+        <!--Tarifler-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecipesVC" customModule="DeCuisine" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,6 +94,14 @@
                                             <action selector="btnClapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGx-KX-mWt"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXu-NW-wLY" customClass="ClapButtonView" customModule="DeCuisine" customModuleProvider="target">
+                                        <rect key="frame" x="295" y="8" width="64" height="64"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="15p-ek-UCq"/>
+                                            <constraint firstAttribute="height" constant="64" id="g7g-MS-Fhb"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="1Lz-kB-BFh"/>
@@ -106,6 +114,8 @@
                                     <constraint firstItem="K7d-ya-GAd" firstAttribute="centerY" secondItem="5hP-jb-WNW" secondAttribute="centerY" id="ZVa-q9-tXm"/>
                                     <constraint firstItem="tGO-s3-Kzy" firstAttribute="leading" secondItem="TQs-WT-Ems" secondAttribute="trailing" constant="8" id="aDB-J2-uSf"/>
                                     <constraint firstAttribute="trailing" secondItem="K7d-ya-GAd" secondAttribute="trailing" constant="16" id="fxo-YX-Vhh"/>
+                                    <constraint firstAttribute="trailing" secondItem="KXu-NW-wLY" secondAttribute="trailing" constant="16" id="r8V-A2-Zz2"/>
+                                    <constraint firstItem="KXu-NW-wLY" firstAttribute="centerY" secondItem="tGO-s3-Kzy" secondAttribute="centerY" id="rPQ-aE-1Jl"/>
                                 </constraints>
                             </view>
                             <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DI4-bz-3Nv">
@@ -134,7 +144,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipes" id="fij-eg-pn7"/>
+                    <navigationItem key="navigationItem" title="Tarifler" id="fij-eg-pn7">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="6ui-Qv-666">
+                            <connections>
+                                <segue destination="wmA-0m-Qfn" kind="show" id="Did-lm-Rq3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnClap" destination="K7d-ya-GAd" id="znH-Lo-X16"/>
                         <outlet property="colRecipes" destination="C9s-XN-MOs" id="GtR-4m-gje"/>
@@ -147,6 +163,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="33.733133433283363"/>
+        </scene>
+        <!--TestVC-->
+        <scene sceneID="OBh-A0-FhN">
+            <objects>
+                <viewController id="wmA-0m-Qfn" customClass="TestVC" customModule="DeCuisine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Vn-Da-Gk6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYU-kK-LuF" customClass="ClapButtonView" customModule="DeCuisine" customModuleProvider="target">
+                                <rect key="frame" x="155" y="301.5" width="64" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Rhy-Eg-0Wg"/>
+                                    <constraint firstAttribute="height" constant="64" id="YhL-pG-8nj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SYU-kK-LuF" firstAttribute="centerY" secondItem="4Vn-Da-Gk6" secondAttribute="centerY" id="BjT-4r-GPx"/>
+                            <constraint firstItem="SYU-kK-LuF" firstAttribute="centerX" secondItem="4Vn-Da-Gk6" secondAttribute="centerX" id="Vac-7k-Ybj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UFc-gQ-BvJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="clapButton" destination="SYU-kK-LuF" id="ZGI-lx-bfE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7f-IH-jZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5999999999999" y="33.733133433283363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Weo-fq-UTH">

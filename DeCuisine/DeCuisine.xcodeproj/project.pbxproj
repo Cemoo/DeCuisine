@@ -33,6 +33,8 @@
 		5245FD6F211B210D001BEAEC /* ClapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FD6E211B210D001BEAEC /* ClapButton.swift */; };
 		5245FD71211B2353001BEAEC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FD70211B2353001BEAEC /* Global.swift */; };
 		5245FD74211B3B03001BEAEC /* ClapButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5245FD73211B3B03001BEAEC /* ClapButtonView.xib */; };
+		5245FD76211C2941001BEAEC /* ClapButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FD75211C2941001BEAEC /* ClapButtonView.swift */; };
+		5245FD78211C2CD3001BEAEC /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FD77211C2CD3001BEAEC /* TestVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		5245FD6E211B210D001BEAEC /* ClapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClapButton.swift; sourceTree = "<group>"; };
 		5245FD70211B2353001BEAEC /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5245FD73211B3B03001BEAEC /* ClapButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClapButtonView.xib; sourceTree = "<group>"; };
+		5245FD75211C2941001BEAEC /* ClapButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClapButtonView.swift; sourceTree = "<group>"; };
+		5245FD77211C2CD3001BEAEC /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				52363F132119783000E2368D /* RecipesVC.swift */,
+				5245FD77211C2CD3001BEAEC /* TestVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			children = (
 				5245FD6E211B210D001BEAEC /* ClapButton.swift */,
 				5245FD73211B3B03001BEAEC /* ClapButtonView.xib */,
+				5245FD75211C2941001BEAEC /* ClapButtonView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -303,11 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5245FD76211C2941001BEAEC /* ClapButtonView.swift in Sources */,
 				52363F382119949500E2368D /* UITextFieldDesignable.swift in Sources */,
 				52363F392119949500E2368D /* UITextViewDesignable.swift in Sources */,
 				52363F362119949500E2368D /* UITextFieldExt.swift in Sources */,
 				52363F142119783000E2368D /* RecipesVC.swift in Sources */,
 				52363F352119949500E2368D /* UINavigationControllerExt.swift in Sources */,
+				5245FD78211C2CD3001BEAEC /* TestVC.swift in Sources */,
 				5245FD5A2119ACB6001BEAEC /* UINavigationControllerExtensioın.swift in Sources */,
 				5245FD6F211B210D001BEAEC /* ClapButton.swift in Sources */,
 				52363F3A2119949500E2368D /* UIViewDesignable.swift in Sources */,

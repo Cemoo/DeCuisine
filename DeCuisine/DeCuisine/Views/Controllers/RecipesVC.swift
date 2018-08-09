@@ -34,10 +34,6 @@ class RecipesVC: UIViewController {
         colRecipes.delegate = self
         colRecipes.dataSource = self
         colRecipes.register(UINib(nibName: "ReceiptCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-        
-        let insetX = (self.view.bounds.width - colRecipes.frame.size.width - 40) / 2.0
-        let insetY = (self.view.bounds.height - colRecipes.frame.size.height - 50) / 2.0
-        colRecipes.contentInset = UIEdgeInsets(top: insetY, left: insetX, bottom: insetY, right: insetX)
         changeUserNameInBottomView(with: 0)
         changeBackImage(index: 0)
     }
@@ -86,7 +82,7 @@ extension RecipesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 30
+        return 20
     }
     
     
