@@ -14,6 +14,8 @@ class ReceiptCell: UICollectionViewCell {
     @IBOutlet weak var lblMealNAme: UILabel!
     @IBOutlet weak var imgCenterYAlignmentConst: NSLayoutConstraint!
     
+    var receiptsController: RecipesVC?
+    
     var paralaxOffset: CGFloat = 0 {
         didSet {
             imgCenterYAlignmentConst.constant = paralaxOffset
@@ -24,6 +26,12 @@ class ReceiptCell: UICollectionViewCell {
         self.layer.cornerRadius = 20
         self.imgReceipt.layer.cornerRadius = 20
         self.imgReceipt.clipsToBounds = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.animate))
+        addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func animate() {
+        receiptsController?.addImageView(image: self.imgReceipt)
     }
     
     func updateParalaxOffset(collectionviewbounds bounds: CGRect) {

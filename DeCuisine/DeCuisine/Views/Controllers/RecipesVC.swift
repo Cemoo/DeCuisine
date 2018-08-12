@@ -16,6 +16,8 @@ class RecipesVC: UIViewController {
     @IBOutlet weak var lblUsername: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var btnClap: ClapButton!
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var bottomView: UIView!
     
     // MARK: DUMMY DATAS
     let images = [#imageLiteral(resourceName: "IMG_0532"),#imageLiteral(resourceName: "IMG_0518"),#imageLiteral(resourceName: "img1")]
@@ -23,6 +25,13 @@ class RecipesVC: UIViewController {
     let mealNames = ["Ev yapımı pizza", "Ev yapımı bira tabağı", "Havuçlu cevizli kek"]
     let usernames = [#imageLiteral(resourceName: "cemo"),#imageLiteral(resourceName: "mete"),#imageLiteral(resourceName: "erkan")]
     //
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.backView.backgroundColor = UIColor.lightGray
+        self.backView.alpha = 0.65
+        self.colRecipes.isHidden = false
+        self.bottomView.isHidden = false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +56,44 @@ class RecipesVC: UIViewController {
         imgUser.clipsToBounds = true
     }
     
+    func addImageView(image: UIImageView) {
+        let startframe = image.superview?.convert(image.frame, to: nil)
+        let imgView = UIImageView(image: image.image)
+        imgView.contentMode = .scaleAspectFill
+        imgView.layer.cornerRadius = 20
+        imgView.clipsToBounds = true
+        imgView.frame = startframe!
+        UIApplication.shared.keyWindow?.addSubview(imgView)
+        UIView.animate(withDuration: 0.4) {
+            self.backView.backgroundColor = UIColor.white
+            self.colRecipes.isHidden = true
+            self.backView.alpha = 1
+            self.bottomView.isHidden = true
+        }
+        DispatchQueue.main.async {
+            self.animate(view: imgView)
+        }
+       
+    }
+    
+    private func animate(view: UIImageView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            view.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }) { (true) in
+            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.7, options: .curveEaseInOut, animations: {
+                view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height * 0.4)
+                view.layer.cornerRadius = 0
+                view.layoutIfNeeded()
+            }) { (true) in
+                view.alpha = 0
+                let dest = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SelectedReceiptVC") as! SelectedReceiptVC
+                dest.backImage = view.image!
+                self.navigationController?.pushViewController(dest, animated: false)
+                view.removeFromSuperview()
+            }
+        }
+    }
+    
     
     @IBAction func btnClapAction(_ sender: ClapButton) {
         sender.clap()
@@ -65,6 +112,7 @@ extension RecipesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         cell.imgReceipt.image = images[indexPath.row]
         cell.lblMealNAme.text = mealNames[indexPath.row]
         cell.updateParalaxOffset(collectionviewbounds: colRecipes.bounds)
+        cell.receiptsController = self
         setShadowFor(cell: cell)
         return cell
     }
@@ -83,6 +131,10 @@ extension RecipesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "selectedreceipt", sender: self)
     }
     
     
@@ -106,6 +158,17 @@ extension RecipesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         cell.layer.shadowPath = UIBezierPath(roundedRect:cell.bounds, cornerRadius:cell.contentView.layer.cornerRadius).cgPath
     }
     
+    func changeUserNameInBottomView(with index: Int) {
+        DispatchQueue.main.async {
+            self.lblUsername.text = self.names[index]
+            self.imgUser.image = self.usernames[index]
+        }
+        
+    }
+}
+
+//Scrollview actions
+extension RecipesVC {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         DispatchQueue.main.async {
             let cells = self.colRecipes.visibleCells as! [ReceiptCell]
@@ -135,15 +198,6 @@ extension RecipesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         pageControl?.currentPage = Int(roundedIndex)
         changeUserNameInBottomView(with: Int(roundedIndex))
         changeBackImage(index: Int(roundedIndex))
-    }
-
-    
-    func changeUserNameInBottomView(with index: Int) {
-        DispatchQueue.main.async {
-            self.lblUsername.text = self.names[index]
-            self.imgUser.image = self.usernames[index]
-        }
-        
     }
 }
 
