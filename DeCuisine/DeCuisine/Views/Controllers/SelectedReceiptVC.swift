@@ -12,46 +12,52 @@ class SelectedReceiptVC: UIViewController {
 
     @IBOutlet weak var imgSelectedReceipt: UIImageView!
     @IBOutlet weak var tbReceipt: UITableView!
+    @IBOutlet weak var imgUser: UIImageView!
+    @IBOutlet weak var lblIUsername: UILabel!
+    
     
     var backImage: UIImage?
     
     override func viewDidAppear(_ animated: Bool) {
         imgSelectedReceipt.image = backImage
-        setupTableView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        updateUI()
     }
     
     private func setupTableView() {
         tbReceipt.delegate = self
         tbReceipt.dataSource = self
-        tbReceipt.contentInset = UIEdgeInsets(top: self.view.frame.size.height * 0.4, left: 0, bottom: 0, right: 0)
+        tbReceipt.register(UINib(nibName: "MaterialCell", bundle: nil), forCellReuseIdentifier: "material")
+        tbReceipt.tableFooterView = UIView()
+        tbReceipt.separatorStyle = .none
+    }
+    
+    fileprivate func updateUI() {
+        imgUser.layer.cornerRadius = self.imgUser.frame.height / 2
+        imgUser.clipsToBounds = true
     }
 
 }
 
 extension SelectedReceiptVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tbReceipt.dequeueReusableCell(withIdentifier: "material", for: indexPath) as! MaterialCell
+        cell.lblName.text = "test"
+        cell.lblAmount.text = "2 kg"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
 }
 
-extension SelectedReceiptVC: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let y = 270 - (scrollView.contentOffset.y + 270)
-        print(y)
-        
-        let height = min(max(y, 200), 600)
-        self.imgSelectedReceipt.frame = CGRect(x: 0, y: 0, width: Int(UIScreen.main.bounds.size.width), height: Int(height))
-        self.imgSelectedReceipt.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
-        self.imgSelectedReceipt.layoutIfNeeded()
-        
-    }
-}
 
 

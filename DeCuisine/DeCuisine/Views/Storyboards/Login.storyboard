@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6TI-9y-Ibj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="eHE-FM-D8E">
+            <objects>
+                <viewController id="wZa-kJ-tib" customClass="LoginVC" customModule="DeCuisine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVU-to-4TT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T3t-vU-r1a">
+                                <rect key="frame" x="0.0" y="0.0" width="1500" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0518" translatesAutoresizingMaskIntoConstraints="NO" id="Dgb-1V-fKX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0532" translatesAutoresizingMaskIntoConstraints="NO" id="L7r-Oq-wUQ">
+                                        <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="FIT-Xf-jYu">
+                                        <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-t4-Yjt">
+                                        <rect key="frame" x="1125" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jQ-CV-SnU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T3t-vU-r1a" firstAttribute="leading" secondItem="duR-69-eom" secondAttribute="leading" id="3jJ-Ur-9Sb"/>
+                            <constraint firstItem="5jQ-CV-SnU" firstAttribute="top" secondItem="cVU-to-4TT" secondAttribute="top" id="AMo-2Q-COH"/>
+                            <constraint firstItem="5jQ-CV-SnU" firstAttribute="leading" secondItem="duR-69-eom" secondAttribute="leading" id="CrO-NE-Pjl"/>
+                            <constraint firstItem="T3t-vU-r1a" firstAttribute="width" secondItem="cVU-to-4TT" secondAttribute="width" multiplier="4" id="S6c-RI-Zc1"/>
+                            <constraint firstItem="5jQ-CV-SnU" firstAttribute="trailing" secondItem="duR-69-eom" secondAttribute="trailing" id="Ugw-jx-ndF"/>
+                            <constraint firstItem="5jQ-CV-SnU" firstAttribute="bottom" secondItem="duR-69-eom" secondAttribute="bottom" id="fe3-P0-yUv"/>
+                            <constraint firstItem="T3t-vU-r1a" firstAttribute="top" secondItem="cVU-to-4TT" secondAttribute="top" id="gud-zc-qvp"/>
+                            <constraint firstItem="T3t-vU-r1a" firstAttribute="bottom" secondItem="duR-69-eom" secondAttribute="bottom" id="uUw-kb-qal"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="duR-69-eom"/>
+                    </view>
+                    <connections>
+                        <outlet property="leading" destination="3jJ-Ur-9Sb" id="ck9-Xd-3Cy"/>
+                        <outlet property="stackView" destination="T3t-vU-r1a" id="xp8-Ns-Q4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXD-6u-lqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264.80000000000001" y="106.59670164917542"/>
+        </scene>
+        <!--Login2VC-->
+        <scene sceneID="pIp-LB-lQg">
+            <objects>
+                <viewController id="6TI-9y-Ibj" customClass="Login2VC" customModule="DeCuisine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d3y-AB-EgI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0518" translatesAutoresizingMaskIntoConstraints="NO" id="4PV-lz-7pT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Df8-tx-N74">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nf2-1t-EhI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAR-jH-MMF" customClass="TextField" customModule="DeCuisine" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="190" width="307" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="xCc-af-5iR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FAR-jH-MMF" firstAttribute="top" secondItem="Nf2-1t-EhI" secondAttribute="top" constant="190" id="Dcd-eS-Ylv"/>
+                                    <constraint firstAttribute="trailing" secondItem="FAR-jH-MMF" secondAttribute="trailing" constant="33" id="hnm-0c-hyR"/>
+                                    <constraint firstItem="FAR-jH-MMF" firstAttribute="leading" secondItem="Nf2-1t-EhI" secondAttribute="leading" constant="35" id="nam-S3-6yN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Df8-tx-N74" firstAttribute="leading" secondItem="lG7-bo-kZV" secondAttribute="leading" id="35t-BF-Oic"/>
+                            <constraint firstItem="4PV-lz-7pT" firstAttribute="top" secondItem="d3y-AB-EgI" secondAttribute="top" id="7II-Nv-9SW"/>
+                            <constraint firstItem="4PV-lz-7pT" firstAttribute="leading" secondItem="lG7-bo-kZV" secondAttribute="leading" id="J0o-zj-2ye"/>
+                            <constraint firstItem="Nf2-1t-EhI" firstAttribute="leading" secondItem="lG7-bo-kZV" secondAttribute="leading" id="Jmu-Qf-u7R"/>
+                            <constraint firstItem="lG7-bo-kZV" firstAttribute="bottom" secondItem="Nf2-1t-EhI" secondAttribute="bottom" id="LiV-xN-y4W"/>
+                            <constraint firstItem="Df8-tx-N74" firstAttribute="top" secondItem="d3y-AB-EgI" secondAttribute="top" id="QpI-Yh-nAJ"/>
+                            <constraint firstItem="lG7-bo-kZV" firstAttribute="trailing" secondItem="Nf2-1t-EhI" secondAttribute="trailing" id="TdA-UD-sIc"/>
+                            <constraint firstItem="4PV-lz-7pT" firstAttribute="bottom" secondItem="lG7-bo-kZV" secondAttribute="bottom" id="n4b-yi-cae"/>
+                            <constraint firstItem="Df8-tx-N74" firstAttribute="bottom" secondItem="lG7-bo-kZV" secondAttribute="bottom" id="q54-9k-ERF"/>
+                            <constraint firstItem="lG7-bo-kZV" firstAttribute="trailing" secondItem="4PV-lz-7pT" secondAttribute="trailing" id="r0v-34-FBB"/>
+                            <constraint firstItem="Nf2-1t-EhI" firstAttribute="top" secondItem="d3y-AB-EgI" secondAttribute="top" id="waC-bl-gPb"/>
+                            <constraint firstItem="Df8-tx-N74" firstAttribute="trailing" secondItem="lG7-bo-kZV" secondAttribute="trailing" id="yPA-wd-EAF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lG7-bo-kZV"/>
+                    </view>
+                    <connections>
+                        <outlet property="şmgTest" destination="4PV-lz-7pT" id="IU8-i5-cdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ji-5c-MGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0518" width="3024" height="4032"/>
+        <image name="IMG_0532" width="3024" height="4032"/>
+        <image name="img1" width="1200" height="1599"/>
+        <image name="img2" width="1200" height="1599"/>
+    </resources>
+</document>

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -172,30 +173,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Egj-Ol-kXt">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Egj-Ol-kXt">
+                                <rect key="frame" x="0.0" y="260" width="375" height="407"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="Ntu-KL-1gw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.84313725490000002" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Havuçlu Cevizli Kek" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STi-0T-Hhk">
+                                <rect key="frame" x="16" y="140" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="brI-ca-eAG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8c-dn-avA" customClass="CustomTabView" customModule="DeCuisine" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="200" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XY9-5D-qfY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpo-Gt-IGd">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cemo" translatesAutoresizingMaskIntoConstraints="NO" id="Ld7-nO-8jQ">
+                                        <rect key="frame" x="8" y="3" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ld7-nO-8jQ" secondAttribute="height" multiplier="1:1" id="1jH-8G-8hu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cemal Bayrı" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYj-rG-x9V">
+                                        <rect key="frame" x="80" y="25" width="287" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2UR-gk-hUH"/>
+                                    <constraint firstAttribute="trailing" secondItem="pYj-rG-x9V" secondAttribute="trailing" constant="8" id="3k4-Rq-2gD"/>
+                                    <constraint firstItem="Ld7-nO-8jQ" firstAttribute="top" secondItem="Wpo-Gt-IGd" secondAttribute="top" constant="3" id="4R8-UE-lpm"/>
+                                    <constraint firstItem="pYj-rG-x9V" firstAttribute="centerY" secondItem="Wpo-Gt-IGd" secondAttribute="centerY" id="OhV-Na-YbT"/>
+                                    <constraint firstItem="pYj-rG-x9V" firstAttribute="leading" secondItem="Ld7-nO-8jQ" secondAttribute="trailing" constant="8" id="RLc-1Z-kve"/>
+                                    <constraint firstItem="Ld7-nO-8jQ" firstAttribute="centerY" secondItem="Wpo-Gt-IGd" secondAttribute="centerY" id="Smi-DN-eDZ"/>
+                                    <constraint firstItem="Ld7-nO-8jQ" firstAttribute="leading" secondItem="Wpo-Gt-IGd" secondAttribute="leading" constant="8" id="eIg-Xw-M6K"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Wpo-Gt-IGd" firstAttribute="bottom" secondItem="UFc-gQ-BvJ" secondAttribute="bottom" id="0Be-9y-Jec"/>
+                            <constraint firstItem="b8c-dn-avA" firstAttribute="top" secondItem="STi-0T-Hhk" secondAttribute="bottom" id="0Pk-pR-zBw"/>
+                            <constraint firstItem="STi-0T-Hhk" firstAttribute="leading" secondItem="UFc-gQ-BvJ" secondAttribute="leading" constant="16" id="2yN-mC-6I8"/>
                             <constraint firstItem="Ntu-KL-1gw" firstAttribute="top" secondItem="4Vn-Da-Gk6" secondAttribute="top" id="6hh-dZ-PaO"/>
                             <constraint firstItem="Egj-Ol-kXt" firstAttribute="trailing" secondItem="UFc-gQ-BvJ" secondAttribute="trailing" id="Aib-IH-FmS"/>
-                            <constraint firstItem="Ntu-KL-1gw" firstAttribute="height" secondItem="4Vn-Da-Gk6" secondAttribute="height" multiplier="0.4" id="BAW-wl-Tbz"/>
+                            <constraint firstItem="Ntu-KL-1gw" firstAttribute="height" secondItem="4Vn-Da-Gk6" secondAttribute="height" multiplier="0.3" id="BAW-wl-Tbz"/>
+                            <constraint firstItem="b8c-dn-avA" firstAttribute="top" secondItem="Ntu-KL-1gw" secondAttribute="bottom" id="Hwp-34-JM4"/>
+                            <constraint firstItem="UFc-gQ-BvJ" firstAttribute="trailing" secondItem="STi-0T-Hhk" secondAttribute="trailing" constant="16" id="NTb-uJ-sEK"/>
+                            <constraint firstItem="Wpo-Gt-IGd" firstAttribute="trailing" secondItem="UFc-gQ-BvJ" secondAttribute="trailing" id="TG8-TE-zGj"/>
                             <constraint firstItem="Egj-Ol-kXt" firstAttribute="leading" secondItem="UFc-gQ-BvJ" secondAttribute="leading" id="VC7-nv-keV"/>
+                            <constraint firstItem="Wpo-Gt-IGd" firstAttribute="leading" secondItem="UFc-gQ-BvJ" secondAttribute="leading" id="bnO-CY-96i"/>
+                            <constraint firstItem="b8c-dn-avA" firstAttribute="leading" secondItem="UFc-gQ-BvJ" secondAttribute="leading" id="duH-zA-Cly"/>
+                            <constraint firstItem="Egj-Ol-kXt" firstAttribute="top" secondItem="b8c-dn-avA" secondAttribute="bottom" id="eVc-cY-zba"/>
                             <constraint firstItem="Egj-Ol-kXt" firstAttribute="bottom" secondItem="UFc-gQ-BvJ" secondAttribute="bottom" id="lNn-2C-bVU"/>
                             <constraint firstItem="Ntu-KL-1gw" firstAttribute="trailing" secondItem="UFc-gQ-BvJ" secondAttribute="trailing" id="tCu-VH-eYN"/>
+                            <constraint firstItem="b8c-dn-avA" firstAttribute="trailing" secondItem="UFc-gQ-BvJ" secondAttribute="trailing" id="uCW-XW-avc"/>
                             <constraint firstItem="Ntu-KL-1gw" firstAttribute="leading" secondItem="UFc-gQ-BvJ" secondAttribute="leading" id="xVj-5Q-Nar"/>
-                            <constraint firstItem="Egj-Ol-kXt" firstAttribute="top" secondItem="UFc-gQ-BvJ" secondAttribute="top" id="y5K-vT-3yZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UFc-gQ-BvJ"/>
                     </view>
                     <connections>
                         <outlet property="imgSelectedReceipt" destination="Ntu-KL-1gw" id="DdK-OY-32h"/>
+                        <outlet property="imgUser" destination="Ld7-nO-8jQ" id="NRg-4C-LvW"/>
+                        <outlet property="lblIUsername" destination="pYj-rG-x9V" id="xcE-f8-6hr"/>
                         <outlet property="tbReceipt" destination="Egj-Ol-kXt" id="6sC-pu-o82"/>
                     </connections>
                 </viewController>
@@ -229,6 +283,7 @@
     </scenes>
     <resources>
         <image name="IMG_0532" width="3024" height="4032"/>
+        <image name="cemo" width="200" height="200"/>
         <image name="clap" width="32" height="32"/>
         <image name="img1" width="1200" height="1599"/>
         <image name="users" width="128" height="128"/>

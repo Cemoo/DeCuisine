@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabView" customModule="DeCuisine" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="JQ5-eU-T0o" id="6OY-2A-F8K"/>
+                <outlet property="btnLeft" destination="FOq-ei-jlU" id="VNN-2F-94k"/>
+                <outlet property="btright" destination="2M1-3N-7AY" id="YND-Kn-Nzi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQ5-eU-T0o">
+                    <rect key="frame" x="0.0" y="67" width="197" height="3"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="hia-nb-d0v"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOq-ei-jlU">
+                    <rect key="frame" x="0.0" y="0.0" width="197" height="67"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="20"/>
+                    <state key="normal" title="Malzemeler">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLeftAction:" destination="-1" eventType="touchUpInside" id="B30-hv-Mmk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M1-3N-7AY">
+                    <rect key="frame" x="197" y="0.0" width="197" height="67"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="20"/>
+                    <state key="normal" title="Tarif">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnRightAction:" destination="-1" eventType="touchUpInside" id="dF9-j2-9Uo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2M1-3N-7AY" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0Rn-SA-7D3"/>
+                <constraint firstItem="JQ5-eU-T0o" firstAttribute="top" secondItem="2M1-3N-7AY" secondAttribute="bottom" id="6y7-bT-K2q"/>
+                <constraint firstItem="JQ5-eU-T0o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Gxf-YN-gae"/>
+                <constraint firstItem="2M1-3N-7AY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HP1-oK-Cne"/>
+                <constraint firstItem="2M1-3N-7AY" firstAttribute="width" secondItem="FOq-ei-jlU" secondAttribute="width" id="Sq0-cc-lWr"/>
+                <constraint firstItem="2M1-3N-7AY" firstAttribute="leading" secondItem="FOq-ei-jlU" secondAttribute="trailing" id="W7B-dG-Ea9"/>
+                <constraint firstItem="FOq-ei-jlU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="X00-VU-KDj"/>
+                <constraint firstItem="JQ5-eU-T0o" firstAttribute="width" secondItem="FOq-ei-jlU" secondAttribute="width" id="dGq-Ia-GaV"/>
+                <constraint firstItem="JQ5-eU-T0o" firstAttribute="top" secondItem="FOq-ei-jlU" secondAttribute="bottom" id="drV-En-CEU"/>
+                <constraint firstItem="FOq-ei-jlU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gq8-Gr-k0i"/>
+                <constraint firstItem="JQ5-eU-T0o" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="mOU-id-ZI9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="43" y="-238"/>
+        </view>
+    </objects>
+</document>

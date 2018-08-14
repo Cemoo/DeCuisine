@@ -81,7 +81,7 @@ class RecipesVC: UIViewController {
             view.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
         }) { (true) in
             UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.7, options: .curveEaseInOut, animations: {
-                view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height * 0.4)
+                view.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height * 0.3)
                 view.layer.cornerRadius = 0
                 view.layoutIfNeeded()
             }) { (true) in
