@@ -11,6 +11,28 @@ import UIKit
 @IBDesignable
 class TextField: UIView {
     @IBOutlet weak var textfield: UITextField!
+    @IBOutlet weak var lblTextfieldName: UILabel!
+    
+    @IBInspectable
+    public var infoLabel: String = "Email" {
+        didSet {
+            self.lblTextfieldName.text = infoLabel
+        }
+    }
+    
+    @IBInspectable
+    var text: String = "" {
+        didSet {
+            self.textfield.text = text
+        }
+    }
+    
+    @IBInspectable
+    var securePass: Bool = false {
+        didSet {
+            self.textfield.isSecureTextEntry = securePass
+        }
+    }
     
     // MARK: - Initializers
     override init(frame: CGRect) {

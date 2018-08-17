@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52145B4E21244C65006114A5 /* OnBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B4D21244C65006114A5 /* OnBoardVC.swift */; };
+		52145B50212451BC006114A5 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B4F212451BC006114A5 /* SignUpVC.swift */; };
+		52145B52212459AC006114A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52145B51212459AC006114A5 /* GoogleService-Info.plist */; };
+		52145B56212567CA006114A5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B53212567C8006114A5 /* UserViewModel.swift */; };
+		52145B57212567CA006114A5 /* DBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B54212567C9006114A5 /* DBViewModel.swift */; };
+		52145B58212567CA006114A5 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B55212567CA006114A5 /* FirebaseViewModel.swift */; };
+		52145B5A212568C3006114A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B59212568C3006114A5 /* User.swift */; };
+		52145B5C212569CF006114A5 /* FirebaseProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B5B212569CF006114A5 /* FirebaseProcess.swift */; };
+		52145B5E21256A1E006114A5 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B5D21256A1E006114A5 /* Loading.swift */; };
+		52145B6021256A52006114A5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B5F21256A52006114A5 /* Protocols.swift */; };
+		52145B6221259610006114A5 /* UIImageViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52145B6121259610006114A5 /* UIImageViewDesignable.swift */; };
 		52363F122119783000E2368D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52363F112119783000E2368D /* AppDelegate.swift */; };
 		52363F142119783000E2368D /* RecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52363F132119783000E2368D /* RecipesVC.swift */; };
 		52363F172119783000E2368D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52363F152119783000E2368D /* Main.storyboard */; };
@@ -40,14 +51,27 @@
 		5245FDA72122FB1A001BEAEC /* MaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5245FDA62122FB1A001BEAEC /* MaterialCell.xib */; };
 		5245FDA92122FBDB001BEAEC /* MaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FDA82122FBDB001BEAEC /* MaterialCell.swift */; };
 		5245FDAB21230977001BEAEC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5245FDAA21230977001BEAEC /* Login.storyboard */; };
-		5245FDAD21230A24001BEAEC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FDAC21230A24001BEAEC /* LoginVC.swift */; };
 		5245FDAF21230B81001BEAEC /* BackImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FDAE21230B81001BEAEC /* BackImageCell.swift */; };
 		5245FDB1212318C0001BEAEC /* Login2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FDB0212318C0001BEAEC /* Login2VC.swift */; };
 		5245FDB321232027001BEAEC /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5245FDB221232027001BEAEC /* TextField.xib */; };
 		5245FDB521232307001BEAEC /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245FDB421232307001BEAEC /* TextField.swift */; };
+		FDEDA9F5F7D79298D40E52EB /* Pods_DeCuisine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360DD5A7A4F517C5E954172E /* Pods_DeCuisine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34701E224CD2D87448021647 /* Pods-DeCuisine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeCuisine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeCuisine/Pods-DeCuisine.debug.xcconfig"; sourceTree = "<group>"; };
+		360DD5A7A4F517C5E954172E /* Pods_DeCuisine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeCuisine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52145B4D21244C65006114A5 /* OnBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardVC.swift; sourceTree = "<group>"; };
+		52145B4F212451BC006114A5 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		52145B51212459AC006114A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52145B53212567C8006114A5 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		52145B54212567C9006114A5 /* DBViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
+		52145B55212567CA006114A5 /* FirebaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
+		52145B59212568C3006114A5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52145B5B212569CF006114A5 /* FirebaseProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseProcess.swift; sourceTree = "<group>"; };
+		52145B5D21256A1E006114A5 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		52145B5F21256A52006114A5 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		52145B6121259610006114A5 /* UIImageViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewDesignable.swift; sourceTree = "<group>"; };
 		52363F0E2119783000E2368D /* DeCuisine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeCuisine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52363F112119783000E2368D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52363F132119783000E2368D /* RecipesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesVC.swift; sourceTree = "<group>"; };
@@ -82,11 +106,11 @@
 		5245FDA62122FB1A001BEAEC /* MaterialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialCell.xib; sourceTree = "<group>"; };
 		5245FDA82122FBDB001BEAEC /* MaterialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCell.swift; sourceTree = "<group>"; };
 		5245FDAA21230977001BEAEC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		5245FDAC21230A24001BEAEC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5245FDAE21230B81001BEAEC /* BackImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackImageCell.swift; sourceTree = "<group>"; };
 		5245FDB0212318C0001BEAEC /* Login2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2VC.swift; sourceTree = "<group>"; };
 		5245FDB221232027001BEAEC /* TextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextField.xib; sourceTree = "<group>"; };
 		5245FDB421232307001BEAEC /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		5F2A585DE6D20CD1AB95CC4E /* Pods-DeCuisine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeCuisine.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeCuisine/Pods-DeCuisine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEDA9F5F7D79298D40E52EB /* Pods_DeCuisine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +130,8 @@
 			children = (
 				52363F102119783000E2368D /* DeCuisine */,
 				52363F0F2119783000E2368D /* Products */,
+				FD8F1A03D80D97518CFF69EB /* Pods */,
+				AA18B6326A609D6DA3B73C1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +146,7 @@
 		52363F102119783000E2368D /* DeCuisine */ = {
 			isa = PBXGroup;
 			children = (
+				52145B51212459AC006114A5 /* GoogleService-Info.plist */,
 				5245FD5C211B0AD7001BEAEC /* UI */,
 				52363F1D2119783100E2368D /* Info.plist */,
 				52363F25211986BE00E2368D /* ViewModels */,
@@ -132,6 +160,7 @@
 		52363F23211986B100E2368D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52145B59212568C3006114A5 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +181,11 @@
 		52363F25211986BE00E2368D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				52145B5F21256A52006114A5 /* Protocols.swift */,
+				52145B5B212569CF006114A5 /* FirebaseProcess.swift */,
+				52145B54212567C9006114A5 /* DBViewModel.swift */,
+				52145B55212567CA006114A5 /* FirebaseViewModel.swift */,
+				52145B53212567C8006114A5 /* UserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -161,8 +195,9 @@
 			children = (
 				52363F132119783000E2368D /* RecipesVC.swift */,
 				5245FD9C211DA674001BEAEC /* SelectedReceiptVC.swift */,
-				5245FDAC21230A24001BEAEC /* LoginVC.swift */,
 				5245FDB0212318C0001BEAEC /* Login2VC.swift */,
+				52145B4D21244C65006114A5 /* OnBoardVC.swift */,
+				52145B4F212451BC006114A5 /* SignUpVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +215,7 @@
 		52363F282119870100E2368D /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				52145B5D21256A1E006114A5 /* Loading.swift */,
 				5245FD70211B2353001BEAEC /* Global.swift */,
 				52363F112119783000E2368D /* AppDelegate.swift */,
 				52363F182119783100E2368D /* Assets.xcassets */,
@@ -208,6 +244,7 @@
 				52363F302119949400E2368D /* UITextFieldExt.swift */,
 				52363F332119949500E2368D /* UITextViewDesignable.swift */,
 				52363F342119949500E2368D /* UIViewDesignable.swift */,
+				52145B6121259610006114A5 /* UIImageViewDesignable.swift */,
 			);
 			path = Designables;
 			sourceTree = "<group>";
@@ -257,6 +294,23 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		AA18B6326A609D6DA3B73C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360DD5A7A4F517C5E954172E /* Pods_DeCuisine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD8F1A03D80D97518CFF69EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34701E224CD2D87448021647 /* Pods-DeCuisine.debug.xcconfig */,
+				5F2A585DE6D20CD1AB95CC4E /* Pods-DeCuisine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52363F202119783100E2368D /* Build configuration list for PBXNativeTarget "DeCuisine" */;
 			buildPhases = (
+				1E7A4A24DAB70498E5E9E6BB /* [CP] Check Pods Manifest.lock */,
 				52363F0A2119783000E2368D /* Sources */,
 				52363F0B2119783000E2368D /* Frameworks */,
 				52363F0C2119783000E2368D /* Resources */,
+				392BB99342A4B006C00CF2A1 /* [CP] Embed Pods Frameworks */,
+				7215B4B296D36B1A9D03CF5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +383,7 @@
 				5245FDAB21230977001BEAEC /* Login.storyboard in Resources */,
 				5245FDB321232027001BEAEC /* TextField.xib in Resources */,
 				5245FD68211B0AEF001BEAEC /* Ubuntu-Light.ttf in Resources */,
+				52145B52212459AC006114A5 /* GoogleService-Info.plist in Resources */,
 				5245FD67211B0AEF001BEAEC /* Ubuntu-Bold.ttf in Resources */,
 				52363F192119783100E2368D /* Assets.xcassets in Resources */,
 				5245FDA32122CB3E001BEAEC /* CustomTabView.xib in Resources */,
@@ -338,28 +396,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E7A4A24DAB70498E5E9E6BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeCuisine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		392BB99342A4B006C00CF2A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DeCuisine/Pods-DeCuisine-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeCuisine/Pods-DeCuisine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7215B4B296D36B1A9D03CF5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeCuisine/Pods-DeCuisine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52363F0A2119783000E2368D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5245FDB1212318C0001BEAEC /* Login2VC.swift in Sources */,
+				52145B56212567CA006114A5 /* UserViewModel.swift in Sources */,
 				5245FD76211C2941001BEAEC /* ClapButtonView.swift in Sources */,
+				52145B5A212568C3006114A5 /* User.swift in Sources */,
+				52145B57212567CA006114A5 /* DBViewModel.swift in Sources */,
 				52363F382119949500E2368D /* UITextFieldDesignable.swift in Sources */,
 				5245FDB521232307001BEAEC /* TextField.swift in Sources */,
 				52363F392119949500E2368D /* UITextViewDesignable.swift in Sources */,
 				52363F362119949500E2368D /* UITextFieldExt.swift in Sources */,
-				5245FDAD21230A24001BEAEC /* LoginVC.swift in Sources */,
 				5245FD9D211DA674001BEAEC /* SelectedReceiptVC.swift in Sources */,
+				52145B5E21256A1E006114A5 /* Loading.swift in Sources */,
+				52145B50212451BC006114A5 /* SignUpVC.swift in Sources */,
 				52363F142119783000E2368D /* RecipesVC.swift in Sources */,
+				52145B5C212569CF006114A5 /* FirebaseProcess.swift in Sources */,
 				52363F352119949500E2368D /* UINavigationControllerExt.swift in Sources */,
 				5245FD5A2119ACB6001BEAEC /* UINavigationControllerExtensioın.swift in Sources */,
 				5245FD6F211B210D001BEAEC /* ClapButton.swift in Sources */,
 				52363F3A2119949500E2368D /* UIViewDesignable.swift in Sources */,
+				52145B58212567CA006114A5 /* FirebaseViewModel.swift in Sources */,
 				5245FD71211B2353001BEAEC /* Global.swift in Sources */,
 				52363F122119783000E2368D /* AppDelegate.swift in Sources */,
 				5245FDA92122FBDB001BEAEC /* MaterialCell.swift in Sources */,
 				5245FDA52122CBCF001BEAEC /* CustomTabView.swift in Sources */,
+				52145B6221259610006114A5 /* UIImageViewDesignable.swift in Sources */,
+				52145B6021256A52006114A5 /* Protocols.swift in Sources */,
+				52145B4E21244C65006114A5 /* OnBoardVC.swift in Sources */,
 				52363F2D211990F700E2368D /* ReceiptCell.swift in Sources */,
 				5245FDAF21230B81001BEAEC /* BackImageCell.swift in Sources */,
 				52363F372119949500E2368D /* UIButtonDesignable.swift in Sources */,
@@ -504,6 +645,7 @@
 		};
 		52363F212119783100E2368D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34701E224CD2D87448021647 /* Pods-DeCuisine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +664,7 @@
 		};
 		52363F222119783100E2368D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2A585DE6D20CD1AB95CC4E /* Pods-DeCuisine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

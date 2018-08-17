@@ -1,0 +1,6 @@
+framework module Pods_DeCuisine {
+  umbrella header "Pods-DeCuisine-umbrella.h"
+
+  export *
+  module * { export * }
+}

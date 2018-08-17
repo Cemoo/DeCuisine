@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SystemConfiguration
 import MapKit
+import FirebaseFirestore
 
 //ERROR TEXTS
 
@@ -17,6 +18,8 @@ let timeOutError: String = "Servis zaman aşımına uğradı"
 var appIsClosing: Bool = false
 
 var isComingFromCustomURL = false
+var db: Firestore!
+var loadingInstance = Loading.shared
 
 func UIColorFromRGB(_ rgbValue: UInt, _ alpha: CGFloat = 1.0) -> UIColor {
     return UIColor(
