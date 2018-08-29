@@ -19,13 +19,17 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var surnameView: TextField!
     
     var userModel: UserViewModel!
-    
+    private var animationWork2: DispatchWorkItem?
     
     let images = [#imageLiteral(resourceName: "img1"),#imageLiteral(resourceName: "img2"),#imageLiteral(resourceName: "IMG_0518"),#imageLiteral(resourceName: "IMG_0532")]
     var index = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         animate()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        animationWork2?.cancel()
     }
     
     func dismissKeyboard() {
@@ -43,7 +47,7 @@ class SignUpVC: UIViewController {
     
     
     func animate() {
-        DispatchQueue.main.async {
+        animationWork2 = DispatchWorkItem(block: {
             UIView.transition(with: self.imgBack, duration: 10, options: [.transitionCrossDissolve], animations: {
                 self.imgBack.image = self.images[self.index]
                 if self.index == self.images.count - 1 {
@@ -55,7 +59,9 @@ class SignUpVC: UIViewController {
             }) { (succ) in
                 self.animate()
             }
-        }
+        })
+        
+        DispatchQueue.main.async(execute: self.animationWork2!)
         
     }
     
@@ -66,9 +72,18 @@ class SignUpVC: UIViewController {
                 if name != "" {
                     if surname != "" {
                         userModel = UserViewModel()
-                        let user = User(name, surname, mail, 0, password, UUID().uuidString, "")
-                        userModel.addUser(user.request()) { (result) in
-                            print(result)
+//                        let user = User(name, surname, mail, 0, password, UUID().uuidString, "")
+//                        userModel.addUser(user.request()) { (result) in
+//                            print(result)
+//                            if result {
+//                                self.message(MessageText.successRegister)
+//                                self.clearFields()
+//                            } else {
+//                                self.message(MessageText.failRegister)
+//                            }
+//                        }
+                        userModel.user = User(name, surname, mail, 1, password, "", "")
+                        userModel.authCreateUser { (result) in
                             if result {
                                 self.message(MessageText.successRegister)
                                 self.clearFields()

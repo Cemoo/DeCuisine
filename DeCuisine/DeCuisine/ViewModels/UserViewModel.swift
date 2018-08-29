@@ -10,6 +10,7 @@ import Foundation
 import FirebaseCore
 import FirebaseFirestore
 import Firebase
+import FirebaseAuth
 
 class UserViewModel {
     let db = DBViewModel(.firebase)
@@ -28,7 +29,16 @@ class UserViewModel {
     func getUser(_ completion: @escaping (Bool) -> ()) {
         db.get("User") { (data) in
             if let data = data {
-                let userData = data.filter{$0["email"] as! String == self.mail && $0["password"] as! String == self.password }.first
+               // let userData = data.filter{$0["mail"] as! String == self.mail && $0["password"] as! String == self.password }.first
+                
+                var userData: QueryDocumentSnapshot?
+                data.forEach({ (item) in
+                    if item != nil {
+                        if item["mail"] as! String == self.mail {
+                            userData = item
+                        }
+                    }
+                })
                 if let data = userData {
                     self.user = self.createUser(data.data())
                     completion(true)
@@ -40,6 +50,31 @@ class UserViewModel {
             }
         }
     }
+    
+    
+    func auth(_ completion: @escaping (Bool) -> ()) {
+        Auth.auth().signIn(withEmail: self.mail, password: self.password) { (user, error) in
+            if let usr = user {
+                self.user = User(usr.user.displayName ?? "","", usr.user.email ?? "", 0, "", usr.user.uid, usr.user.photoURL?.absoluteString ?? "")
+                completion(true)
+            } else {
+                completion(false)
+            }
+        }
+    }
+    
+    func authCreateUser(_ completion: @escaping (Bool) -> ()) {
+        guard let mail = user?.mail, let pass = user?.pass else {return}
+        Auth.auth().createUser(withEmail: mail, password: pass) { (authResult, error) in
+            if let user = authResult?.user {
+                completion(true)
+                print(user.uid)
+            } else {
+                completion(false)
+            }
+        }
+    }
+    
     
     func addUser(_ data: [String: Any], _ completion: @escaping (Bool) -> ()) {
         db.add("User", data: data) { (result,refId) in
@@ -54,7 +89,7 @@ class UserViewModel {
     
     private func createUser(_ data: [String: Any]?) -> User? {
         if let data = data {
-            let user = User(data["name"] as! String, data["surname"] as! String, data["email"] as! String, data["isDeleted"] as! Int, data["password"] as! String, data["userId"] as! String, data["imageUrl"] as! String)
+            let user = User(data["name"] as! String, data["surname"] as! String, data["mail"] as! String, data["isDeleted"] as! Int, data["password"] as! String, data["userId"] as! String, data["imageUrl"] as! String)
             return user
         } else {
             return nil
