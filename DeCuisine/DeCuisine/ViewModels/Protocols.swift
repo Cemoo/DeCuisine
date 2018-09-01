@@ -22,6 +22,7 @@ protocol DBProcess: BaseDBProcess {
     func get(_ collectionName: String, completion: @escaping([QueryDocumentSnapshot]?) ->())
     func delete(_ id: String, collectionName: String, completion: @escaping (Bool)->())
     func update(_ collectionName: String, documentName: String, data: [AnyHashable: Any], completion: @escaping (Bool) -> ())
+    func getWith(_ collectionName: String, _ id: String, _ completion: @escaping([QueryDocumentSnapshot]?) -> ())
 }
 
 extension DBProcess {

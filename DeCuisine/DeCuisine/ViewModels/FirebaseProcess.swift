@@ -12,13 +12,28 @@ import FirebaseFirestore
 import Firebase
 
 class FirebaseProcess: DBProcess {
-    
+  
     func delete(_ id: String, collectionName: String, completion: @escaping (Bool) -> ()) {
         
     }
     
     
     private var ref: DocumentReference? = nil
+    func getWith(_ collectionName: String, _ id: String, _ completion: @escaping ([QueryDocumentSnapshot]?) -> ()) {
+        db.collection(collectionName).whereField("categoryId", isEqualTo: id).getDocuments { (querySnap, error) in
+            Loading.hide()
+            self.conclusion(error, { (result) in
+                if result {
+                    for doc in querySnap!.documents {
+                        print("\(doc.documentID) --> \(doc.data())")
+                    }
+                    completion(querySnap?.documents)
+                } else {
+                    completion(nil)
+                }
+            })
+        }
+    }
     
     func get(_ collectionName: String, completion: @escaping ([QueryDocumentSnapshot]?) -> ()) {
         Loading.show()

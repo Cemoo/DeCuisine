@@ -184,17 +184,17 @@
                         <outlet property="passText" destination="5eG-Kz-cLT" id="mwN-VR-37p"/>
                         <outlet property="splashImageY" destination="F3h-k2-dC9" id="Abm-JO-olP"/>
                         <segue destination="vL2-n4-MiD" kind="presentation" identifier="signup" id="NpM-4E-dPf"/>
-                        <segue destination="Km9-UN-O52" kind="show" identifier="main" id="bBt-E5-LIt"/>
+                        <segue destination="Km9-UN-O52" kind="show" identifier="category" id="bBt-E5-LIt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ji-5c-MGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1051.875" y="105.63380281690141"/>
         </scene>
-        <!--Main-->
+        <!--Category-->
         <scene sceneID="x8h-Kk-5j4">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="Km9-UN-O52" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Category" id="Km9-UN-O52" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="te1-U6-OcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="675" y="600"/>

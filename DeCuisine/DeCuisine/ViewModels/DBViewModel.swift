@@ -29,6 +29,12 @@ class DBViewModel {
         }
     }
     
+    func getWith(_ collectionName: String, _ id: String, _ completion: @escaping ([QueryDocumentSnapshot]?) -> ()) {
+        dbProcess.getWith(collectionName, id) { (data) in
+            completion(data)
+        }
+    }
+    
     func get(_ collectionName: String, completion: @escaping ([QueryDocumentSnapshot]?) -> ()) {
         dbProcess.get(collectionName) { (data) in
             completion(data)

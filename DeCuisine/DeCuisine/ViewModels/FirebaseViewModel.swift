@@ -13,21 +13,19 @@ import Firebase
 
 class FirebaseViewModel {
     var ref: DocumentReference? = nil
-    func add<T>(_ collection: String, object: T) {
-        func add(_ collectionName: String, object: [String: Any]) {
-            ref = db.collection(collectionName).addDocument(data: object) {
-                err in
-                self.conclusion(err, { result in
-                    if result {
-                        print("Document added with ID: \(self.ref!.documentID)")
-                    }
-                })
-            }
+    func add(_ collectionName: String, object: [String: Any]) {
+        ref = db.collection(collectionName).addDocument(data: object) {
+            err in
+            self.conclusion(err, { result in
+                if result {
+                    print("Document added with ID: \(self.ref!.documentID)")
+                }
+            })
         }
     }
     
     func get(_ collectionName: String) {
-        db.collection("Notes").getDocuments() { (querySnap, error) in
+        db.collection(collectionName).getDocuments() { (querySnap, error) in
             if let err = error {
                 print(err.localizedDescription)
             } else {

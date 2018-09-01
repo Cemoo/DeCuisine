@@ -29,14 +29,14 @@ class Login2VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         animateSplashImage()
-        self.animate()
+        //self.animate()
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
             if let user = user {
-                self.performSegue(withIdentifier: "main", sender: self)
+                self.performSegue(withIdentifier: "category", sender: self)
             }
         })
     }
@@ -47,10 +47,7 @@ class Login2VC: UIViewController {
 
     
     override func viewDidDisappear(_ animated: Bool) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.animationWork?.cancel()
-            self.animationWork = nil
-        }
+       self.animationWork?.cancel()
     }
     
     @objc func dismissKeyboard() {
@@ -60,6 +57,9 @@ class Login2VC: UIViewController {
     
     func animate() {
         animationWork = DispatchWorkItem(block: {
+            if self.animationWork!.isCancelled {
+                return
+            }
             UIView.transition(with: self.imgBack, duration: 10, options: [.transitionCrossDissolve], animations: {
                 self.imgBack.image = self.images[self.index]
                 if self.index == self.images.count - 1 {
@@ -72,8 +72,9 @@ class Login2VC: UIViewController {
                 self.animate()
             }
         })
-        
+
         DispatchQueue.main.async(execute: self.animationWork!)
+        
         
     }
     
@@ -106,7 +107,7 @@ class Login2VC: UIViewController {
                     userModel = UserViewModel(mail: username, pass: pass )
                     userModel.auth { (result) in
                         if result {
-                            self.performSegue(withIdentifier: "main", sender: self)
+                            self.performSegue(withIdentifier: "category", sender: self)
                             self.saveUserInfo(self.userModel.user!)
                         } else {
                             let alert = genericAlert("UYARI", message: "Lütfen bilgilerinizi kontrol ediniz", buttonText: "OK")
