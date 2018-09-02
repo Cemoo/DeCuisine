@@ -12,14 +12,14 @@ class CategoriesVC: UIViewController {
     
     
     var categoryModel = CategoriesViewModel()
-    
+    var catId: String = ""
     var categoryName: String = "" {
         didSet {
             let dest = UIStoryboard(name: "Category", bundle: nil).instantiateViewController(withIdentifier: "SubCategoriesVC") as! SubCategoriesVC
+            dest.categoryId = self.catId
             dest.categoryName = self.categoryName
             self.navigationController?.pushViewController(dest, animated: true)
         }
-        
     }
     
     @IBOutlet weak var tbCategories: UITableView!
@@ -67,7 +67,9 @@ extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         self.categoryName = categoryModel.getCategoryName(indexPath.row)
+        self.catId = categoryModel.getCategoryId(indexPath.row)
+        self.categoryName = categoryModel.getCategoryName(indexPath.row)
+        
     }
     
 }

@@ -148,6 +148,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tarifler" id="fij-eg-pn7">
                         <barButtonItem key="backBarButtonItem" title=" " id="V4R-34-yuB"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="BtU-hb-Pjc"/>
                     </navigationItem>
                     <connections>
                         <outlet property="backView" destination="slo-M5-t95" id="N67-hO-0RV"/>

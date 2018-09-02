@@ -23,7 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         settings.areTimestampsInSnapshotsEnabled = true
         db.settings = settings
         IQKeyboardManager.shared().isEnabled = true
+        setupTabBarFonts()
         return true
+    }
+    
+    func setupTabBarFonts() {
+        UITabBar.appearance().tintColor = UIColorFromRGB(0xF1C40F)
+        UITabBar.appearance().unselectedItemTintColor = UIColor.black
+        UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: UIFont(name: "Ubuntu-Bold", size: 15)!], for: .normal)
+        
+    
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

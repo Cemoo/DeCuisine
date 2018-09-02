@@ -13,7 +13,23 @@ class SubCategoriesViewModel {
     var subCategories: [SubCategory]? = []
     let db = DBViewModel(.firebase)
     
-    func getCategories(_ completion: @escaping (Bool) -> ()) {
+    var categoryId: String = "" 
+    
+    func getSubCategories(_ completion: @escaping (Bool) -> ()) {
+        db.getWith("SubCategory", self.categoryId) { (catData) in
+            if let categoryData = catData {
+                categoryData.forEach({ (item) in
+                    self.fetchData(with: item)
+                })
+                self.subCategories = self.subCategories?.reversed()
+                completion(true)
+            } else {
+                completion(false)
+            }
+        }
+    }
+    
+    func getAllSubCategories(_ completion: @escaping (Bool) -> ()) {
         db.get("SubCategory") { (catData) in
             if let categoryData = catData {
                 categoryData.forEach({ (item) in
@@ -32,7 +48,7 @@ class SubCategoriesViewModel {
         self.subCategories?.append(data)
     }
     
-    func getCategoryCount() -> Int {
+    func getSubCategoryCount() -> Int {
         guard let subCategories = self.subCategories else {
             return 0
         }
@@ -42,7 +58,7 @@ class SubCategoriesViewModel {
     
     func fill(_ cell: CategoryCell, _ row: Int) {
         guard let subCategories = self.subCategories else {return}
-        cell.lblCategoryName.text = subCategories[row].name
+        cell.lblCategoryName.text = subCategories[row].name ?? ""
         cell.imgBack.download(with: URL(string: subCategories[row].url!)!)
     }
 }

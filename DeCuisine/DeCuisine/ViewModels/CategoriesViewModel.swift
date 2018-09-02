@@ -47,7 +47,14 @@ class CategoriesViewModel {
         }
         
         return categories[row].name ?? ""
+    }
+    
+    func getCategoryId(_ row: Int) -> String {
+        guard let categories = self.categories else {
+            return ""
+        }
         
+        return categories[row].id ?? ""
     }
     
     func fill(_ cell: CategoryCell, _ row: Int) {
