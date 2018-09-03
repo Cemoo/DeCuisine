@@ -73,7 +73,7 @@
                 <outlet property="imgReceipt" destination="nRC-WK-acN" id="N1E-Xu-q5J"/>
                 <outlet property="lblMealNAme" destination="1CN-qd-6Dh" id="4r7-L3-UQ9"/>
             </connections>
-            <point key="canvasLocation" x="24" y="26.5"/>
+            <point key="canvasLocation" x="-24" y="27"/>
         </collectionViewCell>
     </objects>
     <resources>

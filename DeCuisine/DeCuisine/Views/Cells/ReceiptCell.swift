@@ -42,5 +42,4 @@ class ReceiptCell: UICollectionViewCell {
         paralaxOffset = offsetFromCenter.x * scaleFactor
     }
     
-    
 }

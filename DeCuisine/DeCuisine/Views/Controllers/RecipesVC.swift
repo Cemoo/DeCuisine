@@ -47,7 +47,6 @@ class RecipesVC: UIViewController {
         changeBackImage(index: 0)
     }
     
-    
     private func setupBottomView() {
         btnClap.tintColor = UIColor.white
         imgUser.layer.cornerRadius = 32
@@ -75,6 +74,11 @@ class RecipesVC: UIViewController {
         }
        
     }
+    
+    @IBAction func btnDismissAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     private func animate(view: UIImageView) {
         UIView.animate(withDuration: 0.3, animations: {

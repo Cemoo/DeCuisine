@@ -65,6 +65,13 @@
 		529425732139670000BA37AF /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529425722139670000BA37AF /* UIImageViewExtension.swift */; };
 		5294257521397D3D00BA37AF /* SubCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294257421397D3D00BA37AF /* SubCategoriesVC.swift */; };
 		529425772139860A00BA37AF /* SubCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529425762139860A00BA37AF /* SubCategoriesViewModel.swift */; };
+		5294258F213D29E300BA37AF /* DiscoverTbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5294258E213D29E300BA37AF /* DiscoverTbCell.xib */; };
+		52942591213D2A7000BA37AF /* DiscoverTbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52942590213D2A7000BA37AF /* DiscoverTbCell.swift */; };
+		52942593213D530800BA37AF /* DiscoverCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52942592213D530800BA37AF /* DiscoverCvCell.xib */; };
+		52942595213D532800BA37AF /* DiscoverCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52942594213D532800BA37AF /* DiscoverCvCell.swift */; };
+		52942597213D54F100BA37AF /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52942596213D54F100BA37AF /* DiscoverVC.swift */; };
+		52942599213D552B00BA37AF /* HeaderTbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52942598213D552B00BA37AF /* HeaderTbCell.swift */; };
+		5294259B213D665E00BA37AF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294259A213D665E00BA37AF /* ProfileVC.swift */; };
 		FDEDA9F5F7D79298D40E52EB /* Pods_DeCuisine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360DD5A7A4F517C5E954172E /* Pods_DeCuisine.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +137,13 @@
 		529425722139670000BA37AF /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		5294257421397D3D00BA37AF /* SubCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesVC.swift; sourceTree = "<group>"; };
 		529425762139860A00BA37AF /* SubCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesViewModel.swift; sourceTree = "<group>"; };
+		5294258E213D29E300BA37AF /* DiscoverTbCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverTbCell.xib; sourceTree = "<group>"; };
+		52942590213D2A7000BA37AF /* DiscoverTbCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTbCell.swift; sourceTree = "<group>"; };
+		52942592213D530800BA37AF /* DiscoverCvCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCvCell.xib; sourceTree = "<group>"; };
+		52942594213D532800BA37AF /* DiscoverCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCvCell.swift; sourceTree = "<group>"; };
+		52942596213D54F100BA37AF /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		52942598213D552B00BA37AF /* HeaderTbCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTbCell.swift; sourceTree = "<group>"; };
+		5294259A213D665E00BA37AF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		5F2A585DE6D20CD1AB95CC4E /* Pods-DeCuisine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeCuisine.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeCuisine/Pods-DeCuisine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +239,8 @@
 				52145B4F212451BC006114A5 /* SignUpVC.swift */,
 				5294256621392BCC00BA37AF /* CategoriesVC.swift */,
 				5294257421397D3D00BA37AF /* SubCategoriesVC.swift */,
+				52942596213D54F100BA37AF /* DiscoverVC.swift */,
+				5294259A213D665E00BA37AF /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,6 +276,11 @@
 				5245FDA82122FBDB001BEAEC /* MaterialCell.swift */,
 				5245FDAE21230B81001BEAEC /* BackImageCell.swift */,
 				5294256421392ACE00BA37AF /* CategoryCell.swift */,
+				5294258E213D29E300BA37AF /* DiscoverTbCell.xib */,
+				52942590213D2A7000BA37AF /* DiscoverTbCell.swift */,
+				52942592213D530800BA37AF /* DiscoverCvCell.xib */,
+				52942594213D532800BA37AF /* DiscoverCvCell.swift */,
+				52942598213D552B00BA37AF /* HeaderTbCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -404,6 +425,7 @@
 			files = (
 				529425692139320700BA37AF /* Category.storyboard in Resources */,
 				5245FDA72122FB1A001BEAEC /* MaterialCell.xib in Resources */,
+				5294258F213D29E300BA37AF /* DiscoverTbCell.xib in Resources */,
 				5245FD5B2119ADD4001BEAEC /* Info.plist in Resources */,
 				5245FD74211B3B03001BEAEC /* ClapButtonView.xib in Resources */,
 				5245FD66211B0AEF001BEAEC /* Ubuntu-Italic.ttf in Resources */,
@@ -418,6 +440,7 @@
 				5245FD67211B0AEF001BEAEC /* Ubuntu-Bold.ttf in Resources */,
 				52363F192119783100E2368D /* Assets.xcassets in Resources */,
 				5245FDA32122CB3E001BEAEC /* CustomTabView.xib in Resources */,
+				52942593213D530800BA37AF /* DiscoverCvCell.xib in Resources */,
 				5245FD6D211B0AEF001BEAEC /* Ubuntu-BoldItalic.ttf in Resources */,
 				5245FD6A211B0AEF001BEAEC /* Ubuntu-Regular.ttf in Resources */,
 				52363F172119783000E2368D /* Main.storyboard in Resources */,
@@ -523,15 +546,18 @@
 				52363F392119949500E2368D /* UITextViewDesignable.swift in Sources */,
 				52363F362119949500E2368D /* UITextFieldExt.swift in Sources */,
 				5294257521397D3D00BA37AF /* SubCategoriesVC.swift in Sources */,
+				52942591213D2A7000BA37AF /* DiscoverTbCell.swift in Sources */,
 				5245FD9D211DA674001BEAEC /* SelectedReceiptVC.swift in Sources */,
 				5294256F21395CEC00BA37AF /* Category.swift in Sources */,
 				52145B5E21256A1E006114A5 /* Loading.swift in Sources */,
 				529425732139670000BA37AF /* UIImageViewExtension.swift in Sources */,
 				52145B50212451BC006114A5 /* SignUpVC.swift in Sources */,
 				52363F142119783000E2368D /* RecipesVC.swift in Sources */,
+				52942597213D54F100BA37AF /* DiscoverVC.swift in Sources */,
 				52145B5C212569CF006114A5 /* FirebaseProcess.swift in Sources */,
 				52363F352119949500E2368D /* UINavigationControllerExt.swift in Sources */,
 				5245FD5A2119ACB6001BEAEC /* UINavigationControllerExtensioın.swift in Sources */,
+				52942595213D532800BA37AF /* DiscoverCvCell.swift in Sources */,
 				5294256721392BCC00BA37AF /* CategoriesVC.swift in Sources */,
 				5245FD6F211B210D001BEAEC /* ClapButton.swift in Sources */,
 				52363F3A2119949500E2368D /* UIViewDesignable.swift in Sources */,
@@ -541,8 +567,10 @@
 				5245FDA92122FBDB001BEAEC /* MaterialCell.swift in Sources */,
 				5294256D21395C0200BA37AF /* BaseCategory.swift in Sources */,
 				5245FDA52122CBCF001BEAEC /* CustomTabView.swift in Sources */,
+				52942599213D552B00BA37AF /* HeaderTbCell.swift in Sources */,
 				52145B6221259610006114A5 /* UIImageViewDesignable.swift in Sources */,
 				52145B6021256A52006114A5 /* Protocols.swift in Sources */,
+				5294259B213D665E00BA37AF /* ProfileVC.swift in Sources */,
 				52145B4E21244C65006114A5 /* OnBoardVC.swift in Sources */,
 				52363F2D211990F700E2368D /* ReceiptCell.swift in Sources */,
 				5245FDAF21230B81001BEAEC /* BackImageCell.swift in Sources */,

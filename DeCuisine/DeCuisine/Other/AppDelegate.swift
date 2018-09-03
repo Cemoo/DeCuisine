@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupTabBarFonts() {
         UITabBar.appearance().tintColor = UIColorFromRGB(0xF1C40F)
         UITabBar.appearance().unselectedItemTintColor = UIColor.black
-        UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: UIFont(name: "Ubuntu-Bold", size: 15)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: UIFont(name: "Ubuntu-Medium", size: 10)!], for: .normal)
         
     
     }

@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Kateogori Tab.png",
+      "filename" : "userprofile.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "userprofile@2x.png",
       "scale" : "2x"
     },
     {
