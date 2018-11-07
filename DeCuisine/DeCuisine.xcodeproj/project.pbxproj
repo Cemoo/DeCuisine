@@ -89,7 +89,7 @@
 		52145B5D21256A1E006114A5 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		52145B5F21256A52006114A5 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		52145B6121259610006114A5 /* UIImageViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewDesignable.swift; sourceTree = "<group>"; };
-		52363F0E2119783000E2368D /* DeCuisine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeCuisine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52363F0E2119783000E2368D /* DeQuisine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeQuisine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52363F112119783000E2368D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52363F132119783000E2368D /* RecipesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesVC.swift; sourceTree = "<group>"; };
 		52363F162119783000E2368D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		52363F0F2119783000E2368D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52363F0E2119783000E2368D /* DeCuisine.app */,
+				52363F0E2119783000E2368D /* DeQuisine.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 			);
 			name = DeCuisine;
 			productName = DeCuisine;
-			productReference = 52363F0E2119783000E2368D /* DeCuisine.app */;
+			productReference = 52363F0E2119783000E2368D /* DeQuisine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -728,7 +728,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.DeCuisine;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DeQuisine;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -747,7 +747,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.DeCuisine;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DeQuisine;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
